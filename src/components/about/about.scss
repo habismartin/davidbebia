@@ -1,0 +1,194 @@
+.about{
+    padding: 1em 5.5em;
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: #3b373b;
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 0.7em 0em;
+    }
+    .about-content{
+        display: flex;
+        .about-img{
+            position: relative;
+            flex: 4;
+            .img{
+                position: absolute;
+                cursor: pointer;
+                img{
+                    border-radius: 7px;
+                    height: 10em;
+                }
+            }
+            .img1{
+                margin-left: 1em;
+                transform: rotate(5deg);
+            }
+            .img2{
+                margin-left: 1em;
+                margin-top: 27em;
+                transform: rotate(-20deg);
+            }
+            .img3{
+                margin-left: 1em;
+                margin-top: 15em;
+                margin-left: 5em;
+                transform: rotate(-2deg);
+            }
+        }
+        .about-text-cover{
+            color: #3b373b;
+            padding: 1em;
+            flex: 6;
+            .about-text-wrapper{
+                padding: 1em;
+                display: flex;
+                .line{
+                    width: 1px;
+                    background-color: #3b373b;
+                    height: 100vh;
+                }
+                .about-text{
+                    a{
+                        color: #3b373b;
+                    }
+                    line-height: 20px;
+                    font-weight: 200;
+                    font-size: 0.89rem;
+                    padding: 0.5em 1em;
+                    color: #3b373b;
+                    span{
+                        color: rgb(34, 198, 34);
+                        font-weight: 300;
+                    }
+                    li{
+                        margin-left: 3em;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1000px){
+    .about{
+        padding: 0.5rem 1em;
+        h1{
+            font-size: 1.4rem;
+        }
+        .about-content{
+            flex-direction: column-reverse;
+            .about-img{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                .img{
+                    position: relative;
+                    cursor: pointer;
+                    img{
+                        border-radius: 7px;
+                        box-shadow: 1px 1px 10px 0px rgb(51, 51, 51);
+                    }
+                }
+                .img1{
+                    margin-left: 0em;
+                    transform: rotate(5deg);
+                }
+                .img2{
+                    margin-left: 0em;
+                    margin-top: 0em;
+                    transform: rotate(-20deg);
+                }
+                .img3{
+                    margin-left: 0em;
+                    margin-top: 0em;
+                    margin-left: 0em;
+                    transform: rotate(-2deg);
+                }
+            }
+            .about-text-cover{
+                color: #3b373b;
+                padding: 1em;
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .about{
+        .about-content{
+            .about-text-cover{
+                .about-text-wrapper{
+                    padding: 1em;
+                    display: flex;
+                    .line{
+                        height: 122vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .about{
+        padding: 1em;
+        .about-content{
+            .about-text-cover{
+                .about-text-wrapper{
+                    .line{
+                        height: 109vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    .about{
+        .about-content{
+            .about-text-cover{
+                .about-text-wrapper{
+                    .line{
+                        height: 122vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:400px){
+    .about{
+        .about-content{
+            .about-text-cover{
+                .about-text-wrapper{
+                    .line{
+                        height: 147vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:350px){
+    .about{
+        .about-content{
+            .about-img{
+                .img{
+                    img{
+                        height: 8.4em;
+                    }
+                }
+            }
+            .about-text-cover{
+                .about-text-wrapper{
+                    .line{
+                        height: 272vh;
+                    }
+                }
+            }
+        }
+    }
+}

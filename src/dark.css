@@ -1,0 +1,135 @@
+.light{
+    transition: 1s ease;
+    background-color: #3b373b;
+}
+
+.light .home .weather-time p{
+    color: #dddbde;
+}
+
+.light .home .introduction::before{
+    background-color: #dddbde;
+}
+.light .home .introduction .introduction-texts .buttons button{
+    background-color: #dddbde;
+    color: #3b373b;
+}
+.light .home .introduction .introduction-texts h1{
+    color: #dddbde;
+}
+.light .home .introduction .introduction-texts .introduction-text{
+    color: #dddbde;
+    text-shadow: 1px 5px 0px #c3c3c317;
+}
+.light .home .introduction .introduction-texts .buttons .socials div{
+    color: #3b373b;
+    background-color: #dddbde;
+}
+.light .home .introduction .introduction-texts h1 span{
+    color: #dddbde;
+    text-shadow: 1px 5px 0px #5a5a5a24;
+}
+
+.light .home .introduction .introduction-texts{
+    color: #dddbde;
+    background-color: #3b373b;
+}
+.light .Navbar .navbar-container .menu{
+    background-color: #dddbde;
+    color: #3b373b;
+}
+.light .Navbar .navbar-container .side-bar a{
+    background-color: #dddbde;
+    color: #3b373b;
+}
+.light .skills .languages .skills-cover{
+    background-color: #dddbde;
+}
+.light .skills .languages .skills-cover .seperate{
+    border-bottom: 2px solid #3b373b;
+}
+.light .testimonials .slider .slides{
+    background-color: #dddbde;
+}
+.light .contact .contact-wrapper .contact-form form input, .light .contact .contact-wrapper .contact-form form textarea{
+    background-color: #dddbde;
+}
+.light .contact .contact-wrapper .alt-contact{
+    background-color: #dddbde;
+}
+
+.light .about h1, .light .contact h1,.light .skills h1,.light .works h1,.light .testimonials h1{
+    color: #dddbde;
+}
+.light .contact .contact-wrapper .contact-form h2{
+    color: #dddbde;
+}
+.light .contact .contact-wrapper .alt-contact{
+    color: #3b373b;
+}
+.light .contact .contact-wrapper .alt-contact .icons .icon{
+    color: #3b373b;
+    border: 1px solid #3b373b;
+}
+.light .contact .contact-wrapper .alt-contact .icons .icon:hover{
+    background-color: #3b373b;
+    color: #dddbde;
+}
+.light .contact .contact-wrapper .contact-form form input:focus+label,.light .contact .contact-wrapper .contact-form form textarea:focus+label{
+    color: #dddbde;
+}
+.light .testimonials{
+    color: #3b373b;
+}
+.light .about .about-content .about-text-cover, .light .about .about-content .about-text-cover .about-text-wrapper .about-text,.light .about .about-content .about-text-cover .about-text-wrapper .about-text a{
+    color: #dddbde;
+}
+.light .about .about-content .about-text-cover .about-text-wrapper .line{
+    background-color: #dddbde;
+}
+.light .skills .languages .skills-cover .seperate p,.light .skills .languages .skills-cover .language div p{
+    color: #3b373b;
+}
+.light .skills .languages .skills-cover .language div{
+    background-color: #3b373b46;
+}
+
+.light .home .body .links-cover .links-images .click-main-screen{
+    background-image: url('./images/dmscreen.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 50px 20px #dddbde8a;
+
+}
+.light .orb{
+    background-color: #dddbde;
+    margin-right: 90%;
+    transition: 2s ease;
+    animation: pulses 1s infinite alternate; 
+}
+.light .home .body .orb-stand{
+    transform: rotate(-90deg);
+}
+.light .cursor-dot {
+    background-color: #dddbde; 
+  }
+.light .cursor{
+    border: 1px solid #dddbde;
+  }
+@keyframes pulses {
+    from {
+      box-shadow: 0 0 20px 10px #dddbde7f;
+      margin-top: 6em; 
+    }
+    to {
+      box-shadow: 0 0 40px 20px #dddbde70; 
+      margin-top: 5.4em; 
+    }
+}
+
+@media (max-width: 700px) {
+    .light .orb{
+        margin-right: 80%;
+    }
+}

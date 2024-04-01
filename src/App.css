@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+iframe#webpack-dev-server-client-overlay{display:none!important}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  overflow: auto;
+  background-attachment: fixed;
+  size: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow: scroll;
+  background-color: #cad4df;
+  transition: 1s ease;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button, a{
+  cursor: pointer;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.body-main{
+  margin-top: 0em;
   display: flex;
   flex-direction: column;
+}
+
+.cursor-follower {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 20;
+}
+.cursor-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #3b373b; 
+  border-radius: 50%;
+}
+.cursor{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #3b373b;
+  padding: 0.7em;
+  transition: .1s ease;
+}
+.border{
+  transition: .1s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.g-style{
+  background-color: transparent;
+  transition: .4s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .visible{
+
+} */
+.hidden{
+  transform: translateX(-100%);
+  opacity: 0;
+  position: absolute;
+}
+/* .visible1{
+
+} */
+.hidden1{
+  transform: translateX(-100%);
+  opacity: 0;
+}
+/* .visible2{
+
+} */
+.hidden2{
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+
+.orb {
+  width: 48px;
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  height: 48px;
+  top: 0;
+  right: 0;
+  color: black;
+  margin-right: 2em;
+  background: linear-gradient(to bottom left, #fff, #3b373b);
+  transition: 2s ease;
+  margin-top: 6em; 
+  border-radius: 50%;
+  animation: pulse 1s infinite alternate; 
+}
+
+@keyframes pulse {
+from {
+  box-shadow: 0 0 20px 10px #3b373b9a;
+}
+to {
+  margin-top: 5.4em; 
+  box-shadow: 0 0 40px 20px #3b373b7f;
+}
+}
+
+@media (max-width: 700px) {
+  .orb{
+    margin-right: 1em;
+    width: 40px;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    height: 40px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  @keyframes pulse {
+    from {
+      box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+    }
+    to {
+      margin-top: 5.4em; 
+      box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
+    }
+    }    
 }

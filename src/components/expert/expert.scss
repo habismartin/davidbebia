@@ -1,0 +1,113 @@
+.skills{
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: #3b373b;
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 0.7em 0em;
+    }
+    .languages{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        color: #0dcc0d;
+        .skills-cover{
+            background-color: #656e77;
+            cursor: pointer;
+            position: relative;
+            border-radius: 15px;
+            width: 25em;
+            height: 15em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .seperate{
+                border-bottom: 2px solid #fff;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                height: 3em;
+                display: flex;
+                align-items: center;
+                p{
+                    color: #fff;
+                    font-size: 0.9rem;
+                }
+            }
+            .front{
+                position: relative;
+                margin-top: -0.5em;
+            }
+
+            .language{
+                padding: 0.3em;
+                display: flex;
+                align-items: center;
+                img{
+                    height: 1em;
+                    margin-right: 0.2em;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    background-color: #ffffff2c;
+                    border-radius: 20px;
+                    padding: 0.5em 0.88em;
+                    transition: .3s ease;
+                    p{
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width:1000px){
+    .skills{
+        padding: 0.7em 1em;
+        h1{
+            font-size: 1.4rem;
+        }
+        .languages{
+            .skills-cover{
+                width: 20em;
+                height: 20em;
+                .language{
+                    padding: 0.2em;
+                    img{
+                        height: 0.9em;
+                    }
+                    div{
+                        p{
+                            color: #fff;
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .skills{
+        padding: 0.7em 1em;
+        .languages{
+            .skills-cover{
+                width: 18em;
+                height: 20em;
+            }
+        }
+    }
+}

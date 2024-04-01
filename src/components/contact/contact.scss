@@ -1,0 +1,169 @@
+.contact{
+    padding: 1em 5.5em;
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: #3b373b;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .contact-wrapper{
+        display: flex;
+        padding: 1em 3em;
+
+        .contact-form{
+            flex: 5;
+            padding: 1em;
+            h2{
+                color: #3b373b;
+                margin-bottom: 0.5em;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                button{
+                    background-color: transparent;
+                    color: #3b373b;
+                    font-size: 1.8rem;
+                    border: none;
+                    outline: none;
+                    width: max-content;
+                }
+                #message{
+                    height: 5em;
+                }
+                .message, .email, .name{
+                    position: relative;
+                    width: 100%;
+                }
+
+                input, textarea{
+                    background-color: #dddbde;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 1em;
+                    transition: .2s ease;
+                    margin: 1em 0em;
+                    width: 85%;
+                }
+                label{
+                    position: absolute;
+                    left: 0;
+                    transition: .2s ease;
+                    margin-top: 1.5em;
+                    margin-left: 0.3em;
+                    font-size: 0.83rem;
+                    color: #3b373b91;
+                }
+                input:focus, textarea:focus{
+                    outline: none;
+                }
+                input:focus+label, textarea:focus+label{
+                    color: #3b373b;
+                    margin-top: -0.2em;
+                }
+            }
+        }
+
+        .alt-contact{
+            flex: 4.4;
+            background-color: #3b373b;
+            display: flex;
+            height: 22em;
+            padding: 0em 1em;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            color: #dddbde;
+            transition: transform 0.3s ease;
+            .icons{
+                display: flex;
+                align-items: center;
+                padding: 1em;
+                gap: 0.8em;
+
+                .icon{
+                    color: #dddbde;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    border: 1px solid #dddbde;
+                    padding: 0.8em;
+                    transition: .2s ease;
+                    &:hover{
+                        background-color: #dddbde;
+                        color: #3b373b;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:1000px) {
+    .contact{
+       padding: 1em;
+       h1{
+        font-size: 1.4rem;
+       }
+    }
+}
+@media (max-width:850px) {
+    .contact{
+       padding: 1em;
+       .contact-wrapper{
+        flex-direction: column;
+        .contact-form{
+            form{
+                input, textarea{
+                    width: 97.6%;
+                }
+                .m-label{
+                    margin-top: -8.3em;
+                }
+                label{
+                    margin-top: -4em;
+                    font-size: 0.77rem;
+                }
+                input:focus+label, textarea:focus+label{
+                    margin-top: -5.7em;
+                }
+                textarea:focus+label{
+                    margin-top: -10.3em;
+                }
+            }
+        }
+       }
+    }
+}
+@media (max-width:700px) {
+    .contact{
+       .contact-wrapper{
+        padding: 0em;
+        .contact-form{
+            form{
+                input, textarea{
+                    width: 95%;
+                }
+            }
+        }
+        .alt-contact{
+            height: 12em;
+            p{
+                font-size: 0.9rem;
+            }
+            .icons{
+                .icon{
+                    padding: 0.5em;
+                    font-size: 0.88rem;
+                }
+            }
+        }
+       }
+    }
+}
