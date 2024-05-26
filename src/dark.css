@@ -95,7 +95,7 @@
 }
 
 .light .home .body .links-cover .links-images .click-main-screen{
-    background-image: url('./images/dmscreen.gif');
+    /* background-image: url('./images/dmscreen.gif'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

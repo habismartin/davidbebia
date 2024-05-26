@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import img from "../images/codeimage.webp";
 import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaInstagramSquare } from "react-icons/fa";
-import Monitor from "../images/applemonitor.png";
 import { DarkModeContext } from "../context/darkModeContext";
 import { WiDaySunny, WiCloudy, WiRain, WiSnow } from "react-icons/wi";
 import "../styles/home.scss";
@@ -13,13 +11,13 @@ import "../styles/home.scss";
 const Home = () => {
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:habismartin5@gmail.com';
+    window.location.href = 'mailto:officialwick1@gmail.com';
   };
 
   const { dispatch } = useContext(DarkModeContext);
 
   const [displayText, setDisplayText] = useState("");
-  const finalText = "Habis Martin Chinedu";
+  const finalText = "David Bebia";
 
   useEffect(() => {
     let isMounted = true;
@@ -85,6 +83,7 @@ const Home = () => {
     }
   };
 
+
   return (
     <div className="home">
       <div className="weather-time">
@@ -109,20 +108,18 @@ const Home = () => {
             </span>
           </h1>
           <p className="introduction-text">
-            A Full-Stack Web Developer with a focus on the MERN stack, but still
-            exploring other technologies and frameworks that catch my interest!
-            if you're looking for a developer to add to your team, I'd love to
-            hear from you!
+            A passionate social media manager, video editor, and graphic designer. I help brands tell their stories and engage with their audience through captivating visuals and strategic social media campaigns. Let's bring your vision to life!
           </p>
           <div className="buttons">
-            <button>Download Resume</button>
+            <a href="/resume.pdf" download><button>Download Resume</button></a>
+            
             <div className="socials">
-              <a href="https://www.instagram.com/habismartin/?hl=en">
+              <a href="https://www.instagram.com/tehilabebia?igsh=d2tkazE0N2N6YzNs&utm_source=qr">
                 <div className="insta">
                   <FaInstagramSquare />
                 </div>
               </a>
-              <a href="https://x.com/habismartin_?s=21">
+              <a href="https://x.com/tehilabebia">
                 <div className="insta">
                   <BsTwitterX />
                 </div>
@@ -131,51 +128,6 @@ const Home = () => {
                 <MdOutlineEmail />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="body">
-        <div className="links-cover">
-          <div className="monitor-stand"></div>
-
-          <img className="monitor-img" src={Monitor} />
-          <div className="links-images">
-            <div className="click-main-screen" onClick={handleOpen}></div>
-            <a
-              href="#skills"
-              className={`imgs ${isOpen ? "workspop" : "closed"}`}
-            >
-              <div className={`img`}>
-                <img src={img} />
-                <p>//Skills</p>
-              </div>
-            </a>
-            <a href="#works" className={`imgs ${isOpen ? "links" : "closed"}`}>
-              {" "}
-              <div className={`img`}>
-                <img src={img} />
-                <p>//Works</p>
-              </div>
-            </a>
-            <a
-              href="#education"
-              className={`imgs ${isOpen ? "school" : "closed"}`}
-            >
-              <div className={`img`}>
-                <img src={img} />
-                <p>//Education</p>
-              </div>
-            </a>
-            <a
-              href="#about"
-              className={`imgs ${isOpen ? "contactpop" : "closed"}`}
-            >
-              <div className={`img`}>
-                <img src={img} />
-                <p>//Contact</p>
-              </div>
-            </a>
           </div>
         </div>
       </div>

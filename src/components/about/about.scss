@@ -8,6 +8,9 @@
         font-weight: 300;
         margin: 0.7em 0em;
     }
+    .about-imgs img{
+        height: 15em;
+    }
     .about-content{
         display: flex;
         .about-img{
@@ -18,7 +21,7 @@
                 cursor: pointer;
                 img{
                     border-radius: 7px;
-                    height: 10em;
+                    height: 20em;
                 }
             }
             .img1{

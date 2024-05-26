@@ -11,7 +11,7 @@ import './contact.scss'
 const Contact = () => {
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:habismartin5@gmail.com';
+    window.location.href = 'mailto:officialwick1@gmail.com';
   };
 
   return (
@@ -20,38 +20,17 @@ const Contact = () => {
 
     <div className="contact-wrapper">
     <div className="contact-form">
-    <h2>Send me an email!</h2>
+    <h2 onClick={handleEmailClick}>Send me an email!</h2>
 
-      <form action="">
-        <div className="name">
-          <input type="text" name='name' id='name'/>
-          <label htmlFor="name">Name</label>
-        </div>
-
-        <div className="email">
-          <input type="email" name='email' id='email'/>
-          <label htmlFor="email">Email</label>
-        </div>
-
-        <div className="message">
-          <textarea name="" id="message" cols="30" rows="10"></textarea>
-          <label htmlFor="message" className='m-label'>Message</label>
-        </div>
-
-        <button><IoIosSend/></button>
-
-      </form>
     </div>
 
     <Tilt>
     <div className="alt-contact">
       <p>Reach me on any of these platforms</p>
       <div className="icons">
-       <a href="https://www.instagram.com/habismartin/?hl=en"><div className="icon instagram"><FaInstagram/></div></a>
-       <a href="https://x.com/habismartin_?s=21"><div className="icon twitter"><BsTwitterX/></div></a>
-       {/* <div className="icon linkedin"><FaLinkedinIn/></div> */}
-       <div className="icon email" onClick={handleEmailClick}><MdOutlineEmail/></div>
-       <div className="icon whatsapp"><FaWhatsapp/></div>
+       <a href="https://www.instagram.com/tehilabebia?igsh=d2tkazE0N2N6YzNs&utm_source=qr"><div className="icon instagram"><FaInstagram/></div></a>
+       <a href="https://x.com/tehilabebia"><div className="icon twitter"><BsTwitterX/></div></a>
+       <a href="Wa.me/+2347059742978"><div className="icon twitter"><FaWhatsapp/></div></a>
       </div>
     </div>
     </Tilt>

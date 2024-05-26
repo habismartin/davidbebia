@@ -3,7 +3,6 @@ import './testimonials.scss'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Person from '../../images/amanface.jpeg'
 import {Tilt} from 'react-tilt';
 
 const Testimonials = () => {
@@ -48,7 +47,7 @@ const Testimonials = () => {
         <Tilt>
         <div className='slides'>
           <div className="slides-content">
-          <div className="photo"><img src={Person}/></div>
+          <div className="photo"><img src=''/></div>
           <p>Cynthia Alice</p>
           <div className="text"><span>You are viewing dummy text in English</span><br /><br />
           Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy. <br /><br />
@@ -61,7 +60,7 @@ const Testimonials = () => {
         <Tilt>
         <div className='slides'>
           <div className="slides-content">
-          <div className="photo"><img src={Person}/></div>
+          <div className="photo"><img src=''/></div>
           <p>Cynthia Alice</p>
           <div className="text"><span>You are viewing dummy text in English</span><br /><br />
           Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy. <br /><br />
@@ -74,7 +73,7 @@ const Testimonials = () => {
         <Tilt>
         <div className='slides'>
           <div className="slides-content">
-          <div className="photo"><img src={Person}/></div>
+          <div className="photo"><img src=''/></div>
           <p>Cynthia Alice</p>
           <div className="text"><span>You are viewing dummy text in English</span><br /><br />
           Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy. <br /><br />

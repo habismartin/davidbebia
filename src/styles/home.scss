@@ -22,7 +22,7 @@
     }
 
     .introduction{
-        margin-left: 5em;
+        margin-left: 0em;
         position: relative;
         flex: 4;
         height: 88vh;
@@ -30,6 +30,8 @@
         align-items: center;
         justify-content: center;
         padding-top: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
         &::before{
             content: "";
             width: 1px;
@@ -198,7 +200,7 @@
         
                 .click-main-screen{
                     box-shadow: 0px 0px 50px 20px #978c97a8;
-                    background-image: url('../images/lmscreen.gif');
+                    // background-image: url('../images/lmscreen.gif');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;

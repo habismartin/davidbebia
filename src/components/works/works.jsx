@@ -1,114 +1,60 @@
 import React from "react";
 import { TbPointFilled } from "react-icons/tb";
-import Earnbroker from "../../images/ebh.jpeg";
-import EarnbrokerTrading from "../../images/ebtp.jpeg";
+import Video from "../../images/vid.MP4";
+import { FaInstagramSquare } from "react-icons/fa";
 import "./works.scss";
 
+// Import images from src folder
+import ig1 from "../../images/ig1.JPG";
+import ig2 from "../../images/ig2.JPG";
+import ig3 from "../../images/ig3.JPG";
+import ig4 from "../../images/ig4.JPG";
+import ig5 from "../../images/ig5.JPG";
+import ig6 from "../../images/ig6.JPG";
+import ig7 from "../../images/ig7.JPG";
+import ig8 from "../../images/ig8.JPG";
+
 const Works = () => {
+  // Array of imported images
+  const images = [ig1, ig2, ig3, ig4, ig5, ig6, ig7, ig8];
+
   return (
     <div className="works">
       <h1>&lt;works&gt;</h1>
       <div className="works-wrapper">
-        <p className="works-text">
-          /*While I have several locally hosted projects, these are some of my
-          projects built for actual clients and put in the real world.*/
-        </p>
         <div className="works-cover">
           <div className="seperate">
             <TbPointFilled size={22} color="#fc3b10" />
             <TbPointFilled size={22} color="#ffd500" />
             <TbPointFilled size={22} color="#0dcc0d" />
-            <a href="https://earnbroker.com/"><p>Earnbroker.com</p></a>
           </div>
-          <div className="work earnbroker">
-            <p>
-              This is a forex broker built with the MERN stack with an admin
-              dashboard where users can place trades, make deposits and
-              withdrawals, and a registered admin can monitor everything going
-              on with user activitie from the admin dashboard.This also includes
-              an inbuilt trading chart with real time data.
-            </p>
-          </div>
+          <video width="600" controls>
+            <source src={Video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
-        <div className="works-cover">
-          <div className="seperate">
-            <TbPointFilled size={22} color="#fc3b10" />
-            <TbPointFilled size={22} color="#ffd500" />
-            <TbPointFilled size={22} color="#0dcc0d" />
-            <a href="http://kankysecret.com/"><p>Kankysecrets.com</p></a>
+        {images.map((image, index) => (
+          <div key={index} className="works-cover for-images">
+            <div className="seperate">
+              <TbPointFilled size={22} color="#fc3b10" />
+              <TbPointFilled size={22} color="#ffd500" />
+              <TbPointFilled size={22} color="#0dcc0d" />
+            </div>
+            <div className="image-item">
+              <img src={image} alt={`image-${index}`} />
+            </div>
           </div>
-          <div className="work cosmetic">
-            <p>
-              This is an e-commerce site built with the MERN stack also. I built
-              the website for a close relative for her skincare brand to handle
-              orders.
-            </p>
-          </div>
-        </div>
+        ))}
 
-        <div className="works-cover">
-          <div className="seperate">
-            <TbPointFilled size={22} color="#fc3b10" />
-            <TbPointFilled size={22} color="#ffd500" />
-            <TbPointFilled size={22} color="#0dcc0d" />
-            <a href="https://creditaffairs.com.ng/"><p>Creditaffairs.com.ng</p></a>
-          </div>
-          <div className="work creditaffairs">
-            <p>
-              This was a quick and urgent loan website built for the
-              creditaffairs loan company for users to see about their comapny
-              and reach out to them.
-            </p>
-          </div>
-        </div>
-
-        <div className="works-cover">
-          <div className="seperate">
-            <TbPointFilled size={22} color="#fc3b10" />
-            <TbPointFilled size={22} color="#ffd500" />
-            <TbPointFilled size={22} color="#0dcc0d" />
-            <a href="https://adehosting.com/"><p>Adehosting.com</p></a>
-          </div>
-          <div className="work todo">
-            <p>
-              This was not a project i worked on alone, i assisted in the
-              project. This is a hosting platform where you host your websites
-              for very affordable rates!
-            </p>
-          </div>
-        </div>
-
-        <div className="works-cover">
-          <div className="seperate">
-            <TbPointFilled size={22} color="#fc3b10" />
-            <TbPointFilled size={22} color="#ffd500" />
-            <TbPointFilled size={22} color="#0dcc0d" />
-            <p>Payza</p>
-          </div>
-          <div className="work calc">
-            <p>
-              This is my first cross-platform mobile app I built for a client
-              with react Native MERN and it's going live on play store and app
-              store on the 8th of April, 2024! It is an app for buying and
-              selling of currencies and it also has an inbuilt chat app and also
-              the admin side of the app for when an admin logs into the
-              aplication.
-            </p>
-          </div>
-        </div>
-
-        <div className="works-cover">
-          <div className="seperate">
-            <TbPointFilled size={22} color="#fc3b10" />
-            <TbPointFilled size={22} color="#ffd500" />
-            <TbPointFilled size={22} color="#0dcc0d" />
-            <a href="https://tgrfoods.com/"><p>tgrfoods.com</p></a>
-          </div>
-          <div className="work tgr">
-            <p>
-              This wa also a team work and it is a website for ordering fooditems.
-            </p>
+        <div className="work-links">
+          <p>Work links</p>
+          <div className="links-wrapper">
+          <a href="https://www.instagram.com/reel/C1Pc_QfooqG/?igsh=dTFmNzFjZm1lM2J6"><div className="links"><FaInstagramSquare color="#e34a8d" size={30}/></div></a>
+          <a href="https://www.instagram.com/reel/CzO5Z5iIdSZ/?igsh=N2xxbjBhODd3NXN6"><div className="links"><FaInstagramSquare color="#e34a8d" size={30}/></div></a>
+          <a href="https://www.instagram.com/reel/C604ShitVXl/?igsh=MWN5MDZldm1nMWljNQ=="><div className="links"><FaInstagramSquare color="#e34a8d" size={30}/></div></a>
+          <a href="https://www.instagram.com/reel/C55jo8OLOTn/?igsh=YmJlZnRydHhrZDRr"><div className="links"><FaInstagramSquare color="#e34a8d" size={30}/></div></a>
+          <a href="https://www.instagram.com/reel/C3xngbgtBRo/?igsh=MTJpMTVqdWtyYXV2eA=="><div className="links"><FaInstagramSquare color="#e34a8d" size={30}/></div></a>
           </div>
         </div>
       </div>

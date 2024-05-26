@@ -13,11 +13,15 @@
         padding: 1em 3em;
 
         .contact-form{
-            flex: 5;
+            flex: 3;
             padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             h2{
                 color: #3b373b;
                 margin-bottom: 0.5em;
+                text-decoration: underline;
             }
             form{
                 display: flex;
@@ -67,7 +71,7 @@
         }
 
         .alt-contact{
-            flex: 4.4;
+            flex: 7;
             background-color: #3b373b;
             display: flex;
             height: 22em;
