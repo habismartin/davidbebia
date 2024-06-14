@@ -2,6 +2,7 @@ import React from "react";
 import { TbPointFilled } from "react-icons/tb";
 import School from "../../images/certificate.jpg";
 import School2 from "../../images/c.jpg";
+import School3 from '../../images/1c.jpg'
 import David from "../../images/david.jpg";
 import David2 from "../../images/david2.jpg";
 import { Tilt } from "react-tilt";
@@ -34,10 +35,10 @@ const About = () => {
               a passion for storytelling, visual arts, and digital engagement.
               My expertise spans across social media management, video editing,
               graphic design, and product design, allowing me to help brands
-              connect with their audiences in meaningful and impactful ways.{" "}
-              <br /> <br />
+              connect with their audiences in meaningful and impactful ways.
+              <br/> <br/>
               <div className="about-imgs">
-                <img src={School2} />
+                <img src={School3} />
               </div>
               Social Media Management As a social media manager, I specialize in
               crafting compelling narratives and strategic campaigns that
@@ -64,6 +65,9 @@ const About = () => {
               its audience. My proficiency with tools like Adobe Photoshop,
               Illustrator, and InDesign allows me to bring any vision to life.{" "}
               <br />
+              <div className="about-imgs">
+                <img src={School2} />
+              </div>
               <br />
               Product Design I hold a product design certificate and am in the
               process of obtaining additional certifications that further hone
